@@ -1,0 +1,15 @@
+
+> fruition-innovix@1.0.1 dev
+> next dev
+
+▲ Next.js 16.2.5 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.56.1:3000
+✓ Ready in 6.6s
+Creating turbopack project {
+  dir: 'E:\\RAR\\space-portfolio-main\\space-portfolio-main',
+  testMode: true
+}
+
+○ Compiling / ...
+ GET / 200 in 34.4s (next.js: 33.4s, application-code: 984ms)
