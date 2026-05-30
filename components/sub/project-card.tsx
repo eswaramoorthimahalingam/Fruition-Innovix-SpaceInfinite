@@ -21,7 +21,7 @@ export const ProjectCard = ({
       href={link}
       target={isInternalLink ? undefined : "_blank"}
       rel={isInternalLink ? undefined : "noreferrer noopener"}
-      className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61]"
+      className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] bg-[#03001480]"
     >
       <Image
         src={src}
@@ -29,6 +29,7 @@ export const ProjectCard = ({
         width={1000}
         height={1000}
         className="w-full object-contain"
+        style={{ width: "100%", height: "auto" }}
       />
 
       <div className="relative p-4">

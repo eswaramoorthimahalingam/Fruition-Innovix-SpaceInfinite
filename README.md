@@ -1,6 +1,6 @@
 # Fruition Innovix Website
 
-Fruition Innovix is a Next.js website for presenting creative, digital, software, branding, marketing, consulting, e-commerce, event, and video editing services.
+This Next.js website presents Fruition Innovix content for e-commerce marketing, digital marketing, website design and development, graphics, videos, and product photography services.
 
 ## Getting Started
 

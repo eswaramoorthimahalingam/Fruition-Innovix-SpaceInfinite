@@ -13,3 +13,14 @@ Creating turbopack project {
 
 ○ Compiling / ...
  GET / 200 in 34.4s (next.js: 33.4s, application-code: 984ms)
+ GET / 200 in 354ms (next.js: 20ms, application-code: 334ms)
+✓ Finished writing to filesystem cache in 15.6s
+ GET / 200 in 355ms (next.js: 9ms, application-code: 346ms)
+✓ Finished filesystem cache database compaction in 11.9s
+ GET / 200 in 235ms (next.js: 12ms, application-code: 223ms)
+ GET / 200 in 1602ms (next.js: 889ms, application-code: 713ms)
+ GET / 200 in 1813ms (next.js: 18ms, application-code: 1795ms)
+ GET / 200 in 642ms (next.js: 194ms, application-code: 448ms)
+ GET / 200 in 663ms (next.js: 60ms, application-code: 603ms)
+ GET / 200 in 668ms (next.js: 363ms, application-code: 304ms)
+ GET / 200 in 1784ms (next.js: 25ms, application-code: 1759ms)

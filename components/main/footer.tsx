@@ -4,7 +4,10 @@ import { FOOTER_DATA } from "@/constants";
 
 export const Footer = () => {
   return (
-    <div id="contact" className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px]">
+    <div
+      id="contact"
+      className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px]"
+    >
       <div className="w-full flex flex-col items-center justify-center m-auto">
         <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
           {FOOTER_DATA.map((column) => (
@@ -15,7 +18,9 @@ export const Footer = () => {
               <h3 className="font-bold text-[16px]">{column.title}</h3>
               {column.data.map(({ icon: Icon, name, link }) => {
                 const isExternalLink =
-                  link.startsWith("http") || link.startsWith("mailto:");
+                  link.startsWith("http") ||
+                  link.startsWith("mailto:") ||
+                  link.startsWith("tel:");
 
                 return (
                   <Link
@@ -35,7 +40,8 @@ export const Footer = () => {
         </div>
 
         <div className="mb-[20px] text-[15px] text-center">
-          &copy; Fruition Innovix {new Date().getFullYear()}. All rights reserved.
+          &copy; Fruition Innovix {new Date().getFullYear()}. All rights
+          reserved.
         </div>
       </div>
     </div>

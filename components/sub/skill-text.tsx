@@ -14,27 +14,26 @@ export const SkillText = () => {
     <div className="w-full h-auto flex flex-col items-center justify-center">
       <motion.div
         variants={slideInFromTop}
-        className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]]"
+        className="Welcome-box py-[8px] px-[7px] border border-[rgba(245,179,45,0.54)] opacity-[0.9]"
       >
-        <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-        <h1 className="Welcome-text text-[13px]">
-          Strategy, Technology & Creative Execution
-        </h1>
+        <SparklesIcon className="text-[#f6b32d] mr-[10px] h-5 w-5" />
+        <h1 className="Welcome-text text-[13px]">Why Fruition Innovix</h1>
       </motion.div>
 
       <motion.div
         variants={slideInFromLeft(0.5)}
-        className="text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]"
+        className="max-w-[920px] text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]"
       >
-        Digital solutions built for real business momentum.
+        E-commerce, digital marketing, and website development expertise for
+        brands that want measurable momentum.
       </motion.div>
 
       <motion.div
         variants={slideInFromRight(0.5)}
-        className="cursive text-[20px] text-gray-200 mb-10 mt-[10px] text-center"
+        className="max-w-[820px] text-[18px] leading-8 text-gray-300 mb-10 mt-[10px] text-center"
       >
-        From product development to marketing, we help brands launch, operate,
-        and grow with confidence.
+        We support startups, SMEs, and enterprises with online business
+        strategy, marketplace operations, campaigns, and creative production.
       </motion.div>
     </div>
   );

@@ -4,16 +4,37 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --fi-bg: #02050f;
+  --fi-bg-2: #030817;
+  --fi-panel: rgba(4, 7, 18, 0.84);
+  --fi-panel-strong: rgba(4, 7, 18, 0.95);
+  --fi-border: rgba(245, 177, 38, 0.22);
+  --fi-border-strong: rgba(245, 177, 38, 0.42);
+  --fi-blue: #f6b32d;
+  --fi-blue-soft: #ffd86a;
+  --fi-gold: #2e7cf6;
+  --fi-gold-soft: #7fc2ff;
+  --fi-shadow: rgba(0, 0, 0, 0.42);
+}
+
+body {
+  background:
+    radial-gradient(circle at top center, rgba(245, 179, 45, 0.08), transparent 18%),
+    linear-gradient(180deg, var(--fi-bg) 0%, var(--fi-bg-2) 100%);
+  background-color: var(--fi-bg);
+}
+
 .cursive {
   font-family: "Cedarville Cursive", cursive;
 }
 .Welcome-text {
   background: linear-gradient(
       0deg,
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.4)
+      rgba(255, 255, 255, 0.35),
+      rgba(255, 255, 255, 0.35)
     ),
-    linear-gradient(90.01deg, #e59cff 0.01%, #ba9cff 50.01%, #9cb2ff 100%);
+    linear-gradient(90.01deg, var(--fi-blue) 0.01%, var(--fi-blue-soft) 45.01%, var(--fi-gold) 100%);
   background-blend-mode: normal, screen;
   -webkit-background-clip: text;
   background-clip: text;
@@ -26,7 +47,7 @@
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   border-radius: 32px;
-  box-shadow: inset 0 -7px 11px #a48fff1f;
+  box-shadow: inset 0 -7px 11px rgba(245, 179, 45, 0.12);
   display: flex;
 
   position: relative;
@@ -38,20 +59,57 @@
 .button-primary {
   background: linear-gradient(
       180deg,
-      rgba(60, 8, 126, 0) 0%,
-      rgba(60, 8, 126, 0.32) 100%
+      rgba(18, 28, 52, 0) 0%,
+      rgba(18, 28, 52, 0.38) 100%
     ),
-    rgba(113, 47, 255, 0.12);
-  box-shadow: inset 0 0 12px #bf97ff3d;
+    linear-gradient(180deg, rgba(255, 201, 78, 0.95) 0%, rgba(245, 179, 45, 0.95) 100%);
+  color: #06111e;
+  box-shadow: inset 0 0 12px rgba(255, 216, 106, 0.2);
 }
 .button-primary:hover {
   background: linear-gradient(
       180deg,
-      rgba(60, 8, 126, 0) 0%,
-      rgba(60, 8, 126, 0.42) 100%
+      rgba(18, 28, 52, 0) 0%,
+      rgba(18, 28, 52, 0.5) 100%
     ),
-    rgba(113, 47, 255, 0.24);
-  box-shadow: inset 0 0 12px #bf97ff70;
+    linear-gradient(180deg, rgba(255, 210, 102, 1) 0%, rgba(245, 179, 45, 1) 100%);
+  color: #06111e;
+  box-shadow: inset 0 0 12px rgba(255, 216, 106, 0.35);
+}
+
+.nav-menu-dropdown {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.nav-menu-dropdown--nested {
+  transform: translateX(8px);
+}
+
+.nav-menu-item:hover > .nav-menu-dropdown,
+.nav-menu-item:focus-within > .nav-menu-dropdown {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.nav-menu-item:hover > .nav-menu-dropdown--nested,
+.nav-menu-item:focus-within > .nav-menu-dropdown--nested {
+  transform: translateX(0);
+}
+
+.fi-panel {
+  background: var(--fi-panel);
+  border-color: var(--fi-border);
+  box-shadow: 0 18px 36px var(--fi-shadow);
+}
+
+.fi-panel-strong {
+  background: var(--fi-panel-strong);
+  border-color: var(--fi-border-strong);
+  box-shadow: 0 18px 36px var(--fi-shadow);
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
